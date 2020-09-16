@@ -4,17 +4,18 @@ function computerPlay(){
     let compRandom = Math.floor(Math.random()*compGamePlay.length);
     //console.log("the compRandom is: " + compRandom);
     let computerSelection = compGamePlay[compRandom];
-    //console.log(computerSelection);
+    //console.log(computerSelection1);
     return computerSelection;
 }
-
+/////////////////---------NO NEED TO DO THIS--------------/////////////////////////////////
 // This is a function that takes in a playerAnswer and returns all the words in an answer
 // in lower case format so we can use it in our next function-->game()
-function playerAnswer(playerSelect){
-    let playerSelection = playerSelect.toLowerCase();
-    //console.log(playerAllSmall);
-    return playerSelection;
-}
+// function playerAnswer(playerSelect){
+//     let playerSelection = playerSelect.toLowerCase();
+//     //console.log(playerSelection1);
+//     return playerSelection;
+//}
+//////////////////////////////////////////////////////////////////////////////////////////
 
 // This function takes in a (playerSelection) and b(computerSelection) and compares them and
 // returns the result about the winner
@@ -53,10 +54,10 @@ function playRound(a, b){
 
 // This is a function that calls the playRound function 5 times, and returns tha final
 // winner after 5 rounds.
-function game(){
-        console.log(playRound());
-        console.log(playRound());
-}
+// function game(){
+//         console.log(playerAnswer(prompt("Select only one from 'rock' 'paper' or 'scissor'")));
+//         console.log(playRound(playerSelection, computerSelection));
+// }
 
 // array of selections for computer to select from.
 let compGamePlay = [
@@ -68,9 +69,11 @@ let compGamePlay = [
 //
 //
 //
-const playerSelection = playerAnswer (prompt("Select only one from 'rock' 'paper' or 'scissor'"));
+const playerAnswer = (prompt("Select only one from 'rock' 'paper' or 'scissor'"));
+const playerSelection = playerAnswer.toLowerCase();
 //console.log(playerSelection);
 const computerSelection = computerPlay(compGamePlay);
 //console.log(computerSelection);
-const result = playRound(playerSelection, computerSelection);
-game();
+const result = playRound;
+console.log(playRound(playerSelection, computerSelection));
+//game();
