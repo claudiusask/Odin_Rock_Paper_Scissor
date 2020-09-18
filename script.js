@@ -1,3 +1,8 @@
+    // Title:       The-Odin-Project --- "Rock, paper and scissor game."
+    // By:          Sibtain  
+    // Started:     16-SEP-2020.
+    // Finished:    17-SEP-2020.
+    //
     // Variables declared for FUNC displayResult and FUNC game.
     let computerResult = 0;
     let playerResult = 0;
